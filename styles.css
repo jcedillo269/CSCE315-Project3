@@ -1,0 +1,106 @@
+body {
+    background-color:#383838;
+    color: 	#D3D3D3;
+    font-family: Courier;
+}
+
+#p1 {
+    color: #FF6666;
+}
+
+#p2 {
+    color: #74BDCB;
+}
+#p3 {
+    color: #CC3366; /* <-- */
+}
+
+#p6 {
+    color: #FFFF99;
+}
+
+#div1 {
+    padding-left: 15px;
+}
+
+    #title_text {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    #userdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #user_text {
+        margin-right: 5px;
+    }
+    #user_box {
+        margin-left: 5px;
+    }
+
+    #passdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #pass_text {
+        margin-right: 5px;
+    }
+    #pass_box {
+        margin-left: 5px;
+    }
+
+
+/* ====== button stuff  ====== */
+/* this is what does the sliding hover motion */
+button, button::after { 
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+-o-transition: all 0.3s;
+transition: all 0.3s;
+}
+button {
+height: 40px;
+background: none;
+border: 4px solid #fff;
+border-radius: 10px;
+color: #fff;
+display: block;
+font-size: 0.3em;
+font-weight: bold;
+margin: 10px auto;
+padding: 2em 6em;
+position: relative;
+text-transform: uppercase;
+}
+button::before, button::after {
+background: #fff;
+content: '';
+position: absolute;
+z-index: -1;
+}
+button:hover {
+color: #FF6666; /* color of SUBMIT */
+}
+.button2::after {
+height: 100%;
+left: 0;
+top: 0;
+width: 0;
+}
+.button2:hover:after {
+width: 100%;
+}
+
+/*
+-- Color palette -- 
+#383838; - background
+#D3D3D3; - off-white
+#FF6666; - salmon
+#74BDCB; - blue
+#CC3366; - pomegranate
+#FFFF99; - yellow
+*/
